@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLESSINGS & CARE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+
+      
+      <div class="logo">
+        <img src ="images/logo.jpeg">
+        <a href="#">BLESSINGS & CARE</a>
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#section2">About</a></li>
+       
+        <li><a href="#socials">Contact</a></li>
+      </ul>
+
+
+      <div class="icon menu-btn">
+
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner">
+    
+    <div class="contact">
+      <button class="noselect"  onclick="window.location.href = '#donate';">DONATE</button>
+      <button class="noselect"  onclick="window.location.href = 'https://www.youtube.com/watch?v=u5I_v50Dh9s';">WATCH NOW</button>
+      
+  </div>
+  </div>
+
+  <section id="section2" class="section2">
+    <div class="heading">
+      <h1>ABOUT THE SITE</h1>
+    </div>
+    <div class="video">
+      <iframe width="630" height="400" src="https://www.youtube.com/embed/EjL1aVSZVy0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    </div>
+
+    <div class="content">
+        <div class="content1">
+            <p> Poor old aged people undergoing great difficulties lacking & logging in love and affection
+               and always are into mental stress, strain, for this reason, we started "Blessing & Care Foundation" 
+               with humanity and service to cater to the needs of such unfortunate elders. In our foundation, 
+               seniors are living and getting food, shelter, love, proper care, and other basic needs.<br> We sponsor 
+               elders boarding & lodging facilities with breakfast, lunch, dinner, Medical care, T.V for recreation
+               .Senior citizen  living in poverty face abandonment by their own families as they cannot earn an 
+               income. They end up living alone and starving as they cannot afford even two meals a day.<br> 
+               Donate to help poor elderly to help them have access to a safe old-age home where they can get food,
+                shelter and medical care.Those in extreme need are usually socially excluded and face a lack of
+                 basic necessitates for reasons like living in underserved areas or social stigma of being affected 
+                 with an incurable illness.<br><br>
+              Donate to those in extreme need and help them with resources like food, medical care, livelihood resources, sanitation, education, etc. to enable them to lead a normal life.
+                
+                
+            </p>
+        </div>
+
+        
+
+        <div id="donate">
+          <div class="donate_lines">
+            Donate to those in extreme need and help them with resources like food, medical care, livelihood resources, sanitation, education, etc. to enable them to lead a normal life.
+              <div class="buttons">
+                  <div class="container">
+                      <a href="payment.html" class="btn effect01" ><span>Donate Now</span></a>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+<div id="socials" class="bottom-container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <section class="trial-block shadow3" id="ContactUs">
+
+
+
+    <div class="social-overlap process-scetion mt100">
+  
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="social-bar">
+            <div class="social-icons mb-3 iconpad text-center">
+
+
+              <a href="https://github.com/Aditi-jha2" target="_blank" class="slider-nav-item"><i
+                  class="fab fa-github"></i></a>
+
+              <a href="https://twitter.com/AditiJh34292317" target="_blank" class="slider-nav-item"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/aditi-jha-1ab15920b/" target="_blank" class="slider-nav-item"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://wa.link/jguivw" target="_blank" class="slider-nav-item"><i
+                  class="fab fa-whatsapp"></i></a>
+              <a href="mailto: aditij407@gmail.com" target="_blank" class="slider-nav-item"><i
+                  class="fa fa-envelope"></i></a>
+              <a href="https://www.instagram.com/aditijha15/" target="_blank" class="slider-nav-item"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="tel: 91 8287833027" class="slider-nav-item"><i class="fa fa-phone"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+</div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
